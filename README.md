@@ -1,1 +1,4 @@
-I found some exercices on internet about a mini challenge in Python and I started to work on this. The goal of this project is to improve notion abou Python.
+I found some exercises on internet about a mini challenge in Python and I started to work on this. 1
+The goal of this mini project is to improve notions about Python.
+
+This repository will contain all exercises from challenge.
