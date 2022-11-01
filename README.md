@@ -1,2 +1,1 @@
-# py-challenge
-This repository contains some exercises made in Python programming language to improve some notions
+I found some exercices on internet about a mini challenge in Python and I started to work on this. The goal of this project is to improve notion abou Python.
