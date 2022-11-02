@@ -1,7 +1,6 @@
 
-# Create a new folder in Env_2 folder and copy the files from it to the new folder
-# rename the files with a generic name, for example: file_[current year]_[number form 0 to n]
-# the files should have the same extension like original
+# exercice 2
+# please see the README.md file
 
 from datetime import datetime
 from os import getcwd

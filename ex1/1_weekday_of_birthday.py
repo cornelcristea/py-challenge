@@ -1,5 +1,6 @@
 
-# In what weekday is your birthday after N years' ?
+# exercice 1 
+# please see the README.md file
 
 from datetime import datetime 
 from datetime import date
