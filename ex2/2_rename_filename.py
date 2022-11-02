@@ -16,7 +16,7 @@ from shutil import copyfile
 current_year = datetime.now().year
 current_dir = getcwd()
 
-env_folder_name = 'env_2'
+env_folder_name = 'env'
 work_folder = join(current_dir, env_folder_name)
 
 new_folder_name = 'renamed_files'
