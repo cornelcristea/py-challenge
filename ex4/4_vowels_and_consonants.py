@@ -1,5 +1,5 @@
 # exercice 4
-# please see the README.md file
+# please see the README.md file from main repository
 
 def get_NmberOfVowelsAndConsonants(word):
     w_number = 0

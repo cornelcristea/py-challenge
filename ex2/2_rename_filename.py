@@ -1,6 +1,6 @@
 
 # exercice 2
-# please see the README.md file
+# please see the README.md file from main repository
 
 from datetime import datetime
 from os import getcwd

@@ -1,6 +1,6 @@
 
 # exercice 3
-# please see the README.md file
+# please see the README.md file from main repository
 
 from module import file_content
 from sys import argv

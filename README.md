@@ -26,6 +26,7 @@ Terminal command: python 3_file_content.py file_1 file_2 file_3 file_4 file_5
 4. Write a function that returns the number of occurrences of vowels and consonants in a string given as an argument
 
 5. Save in a text/csv file the movies on IMDB/Cinemagia with a rating higher than 8.
+Remark: For this exercices I used the following additional libraries: requests, bs4, pandas
 
 6. Send an e-mail every time you start your PC with the weather details from the city you are in.
 To access weather details you can make a request to this API/endpoint: [openweathermap - API]
