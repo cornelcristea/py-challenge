@@ -66,7 +66,7 @@ def get_movies_list(website, rating):
         
     for page_number in pages:  
         page_url = website_url + str(page_number)
-        doc = get_html_code(page_url)
+        doc = html_parser(page_url)
         # create list with all titles
         titles = get_movies_title(doc, website)
         titles_list = titles_list + titles
@@ -82,14 +82,13 @@ def get_movies_list(website, rating):
 
     return movies_dict
 
-
 # take only movies with rating higher than rating from user
 def get_movies(website, rating, file):    
     movies_dict = get_movies_list(website, rating)
-    get_file(movies_dict, file, website)
+    save_file(movies_dict, file, website)
 
-# get parsed html source code from webpage
-def get_html_code(url):
+# parse html source code from webpage
+def html_parser(url):
     response = rg(url)
     if response.status_code != 200:
         print('ERROR: Failed to read the page' + url)
@@ -98,7 +97,7 @@ def get_html_code(url):
     return doc
 
 # create file with results
-def get_file(movies_dict, file, website):
+def save_file(movies_dict, file, website):
     data = pd.DataFrame(movies_dict)
 
     if website == 1:
@@ -109,10 +108,10 @@ def get_file(movies_dict, file, website):
     try:
         if file == 1:
             file_name = 'movies_list' + tag_name + '.csv'
-            data.to_csv(file_name, index = None)
+            data.to_csv(file_name, index=False)
         else:
             file_name = 'movies_list' + tag_name + '.xlsx'
-            data.to_excel(file_name, index = None)
+            data.to_excel(file_name, index=False)
         print('The file "' + file_name + '" has been saved in current folder.')
     except:
         print('ERROR: Something went wrong saving "' + file_name + '"')
