@@ -108,10 +108,10 @@ def save_file(movies_dict, file, website):
     try:
         if file == 1:
             file_name = 'movies_list' + tag_name + '.csv'
-            data.to_csv(file_name, index=False)
+            data.to_csv(file_name, index=None)
         else:
             file_name = 'movies_list' + tag_name + '.xlsx'
-            data.to_excel(file_name, index=False)
+            data.to_excel(file_name, index=None)
         print('The file "' + file_name + '" has been saved in current folder.')
     except:
         print('ERROR: Something went wrong saving "' + file_name + '"')
