@@ -1,24 +1,25 @@
-# exercice 4
-# please see the README.md file from main repository
 
-def get_NmberOfVowelsAndConsonants(word):
+def get_VowelsAndConsonants(word):
     w_number = 0
     c_number = 0
-    n_list = '0123456789'
-    w_list = 'aeiou'
+    forb_list = '0123456789!"£$%^&*()_+=¬`\|<>,./?''#~}{[]'
+    w_list = 'AEIOU'
 
     for letter in word:
-        if letter in n_list:
+        upper_letter = letter.upper()
+        if upper_letter in forb_list:
             print('ERROR: Please enter a valid word')
             return
-        elif letter in w_list:
+        if upper_letter in w_list:
             w_number += 1 
         else:
             c_number += 1
-        
+    
+    print()
     print(str(w_number), 'vowels')
     print(str(c_number), 'consonants')
 
+
 if __name__ == '__main__':
     word = input('Enter your word: ')
-    get_NmberOfVowelsAndConsonants(word)
+    get_VowelsAndConsonants(word)
